@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Andhra Specials</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:hover {
+  background-color: bisque;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h1{
+    background-color: lightpink;
+    text-align: center;
+    color: purple;
+}
+.card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+            }
+
+            .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+            .container {
+            padding: 2px 16px;
+            }
+</style>
+</head>
+<body>
+
+<h1><B>Andhra Specials</B></h1>
+<div class="card">
+<table>
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Unit price</th>
+    <th>Total price</th>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="file:///C:/Users/Nikhi/Downloads/ingragidosa.html"><img src="https://vegrecipesofkarnataka.com/assets/img/raagi-dose/instant-raagi-dosa-recipe.jpg" alt="Ragi Dosa" width="100" height="100"></a></td>  
+    <td>Ragi Dosa</td>
+    <td>×3</td>
+    <td>₹50</td>
+    <td>₹150</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://i.pinimg.com/564x/b9/fc/08/b9fc08fd26e09fb50e810d13b37ad7dc.jpg" alt="Dragon Prawns" width="100" height="100"></a></td>  
+    <td>Dragon Prawns</td>
+    <td>×1</td>
+    <td>₹270</td>
+    <td>₹270</td>
+  </tr>
+</div>
+  <div class="card">
+  <tr>
+    <td><a href="#"><img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani-600x600.jpg" alt="Chicken Briyani" width="100" height="100"></a></td>  
+    <td>Chicken Briyani</td>
+    <td>×2</td>
+    <td>₹320</td>
+    <td>₹640</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://i1.wp.com/www.flavoursonplate.com/wp-content/uploads/2019/03/Butter-naan1.jpg?w=601&ssl=1" alt="Butter naan" width="100" height="100"></a></td>  
+    <td>Butter naan</td>
+    <td>×5</td>
+    <td>₹40</td>
+    <td>₹200</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://vaya.in/recipes/wp-content/uploads/2018/12/Blackcurrant-Ice-Cream.jpg" alt="Black Current" width="100" height="100"></a></td>  
+    <td>Black Current</td>
+    <td>×2</td>
+    <td>₹200</td>
+    <td>₹400</td>
+  </tr>
+</div>
+</table>
+<a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 115%;text-decoration: none;">Back to top</a>
+<footer style="background-color: rgba(243, 230, 255, 0.8);padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;position: absolute;top: 125%;">
+    <div style="float: right;margin-left: 500px;">Quick link access: 
+    <nav>
+        <a href="http://localhost/html%20project/IndianVar.php" style="text-decoration: none;color: darkgreen;">Indian Varites</a>|
+        <a href="http://localhost/html%20project/signup.php" style="text-decoration: none;color: darkgreen;">Sign up</a>|
+        <a href="http://localhost/html%20project/regional%20home.php" style="text-decoration: none;color: darkgreen;">Regional food</a>|
+        <a href="http://localhost/html%20project/feedback.php" style="text-decoration: none;color: darkgreen;">Feedback</a>
+    </nav></div>
+    <address style="float: left;margin-right: 500px;">
+        Topic: Login page for cooking portal<br>
+        Author: Anjana<br>
+        Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+    </address>
+</footer>
+</body>
+</html>

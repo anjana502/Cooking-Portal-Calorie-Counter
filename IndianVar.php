@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Indian varities</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:hover {
+  background-color:bisque;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h1{
+    background-color: lightpink;
+    text-align: center;
+    color: purple;
+}
+.card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+            }
+
+            .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+            .container {
+            padding: 2px 16px;
+            }
+</style>
+</head>
+<body>
+
+<h1><B>Indian Variaties</B></h1>
+<div class="card">
+<table>
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Unit price</th>
+    <th>Total price</th>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="file:///C:/Users/Nikhi/Downloads/ingofkebabs.html"><img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Kebab.jpg" alt="Kebabs" width="100" height="100"></a></td>  
+    <td>Kebabs</td>
+    <td>×2</td>
+    <td>₹250</td>
+    <td>₹500</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://15minmom.com/wp-content/uploads/2020/06/Instant-Semolina-Uttapam-1440x1440.jpeg" alt="Uttapam" width="100" height="100"></a></td>  
+    <td>Uttapam</td>
+    <td>×3</td>
+    <td>₹60</td>
+    <td>₹180</td>
+  </tr>
+</div>
+  <div class="card">
+  <tr>
+    <td><a href="#"><img src="https://previews.123rf.com/images/rickysoni/rickysoni1812/rickysoni181200319/114052739-indian-sweet-rasgulla-also-know-as-rosogolla-roshogolla-rasagola-ras-gulla-anguri-rasgulla-or-angoor.jpg" alt="Rosogolla" width="100" height="100"></a></td>  
+    <td>Rosogolla</td>
+    <td>×2</td>
+    <td>₹80</td>
+    <td>₹160</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://images.indianexpress.com/2020/04/Dhokla-759.jpg" alt="Butter naan" width="100" height="100"></a></td>  
+    <td>Dhoklas</td>
+    <td>×2</td>
+    <td>₹150</td>
+    <td>₹300</td>
+  </tr>
+</div>
+<div class="card">
+  <tr>
+    <td><a href="#"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2019/10/Tandoori-Chicken.jpg" alt="Black Current" width="100" height="100"></a></td>  
+    <td>Tandoori chicken</td>
+    <td>×1</td>
+    <td>₹200</td>
+    <td>₹200</td>
+  </tr>
+</div>
+</table>
+<a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 115%;text-decoration: none;">Back to top</a>
+<footer style="background-color: rgba(243, 230, 255, 0.8);padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;position: absolute;top: 125%;">
+    <div style="float: right;margin-left: 500px;">Quick link access: 
+    <nav>
+    <a href="http://localhost/html%20project/cookingportalhome.php" style="text-decoration: none;color: darkgreen;">Home</a>|
+                <a href="http://localhost/html%20project/login.php" style="text-decoration: none;color: darkgreen;">Log in</a>|
+                <a href="http://localhost/html%20project/ingofblackcurrent.php" style="text-decoration: none;color: darkgreen;">Black Currant</a>|
+                <a href="http://localhost/html%20project/Htips.php" style="text-decoration: none;color: darkgreen;">Health Tips</a>|
+    </nav></div>
+    <address style="float: left;margin-right: 500px;">
+        Topic: Login page for cooking portal<br>
+        Author: Anjana<br>
+        Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+    </address>
+</footer>
+</body>
+</html>

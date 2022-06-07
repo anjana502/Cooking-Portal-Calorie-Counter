@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Cooking Portal and Calorie Counter Account Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Cooking portl and calorie counter login">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-image: url("calorie\ counter\ image.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #calorie {
+                position:relative;
+                top: 10%;
+                left: 6%;
+                background-color:honeydew;
+                max-width: 300px;
+                padding: 30px;
+                margin: 50px;
+            }
+            #foodname, #foodtype, #foodweight {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background-color:white;
+            }
+            #foodname:focus, #foodtype:focus, #foodweight:focus {
+                background-color:whitesmoke;
+                outline: none;
+            }
+            #btn {
+                background-color:lightblue;
+                font-size: 20px;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+            #btn:hover {
+                opacity: 1;
+            }
+            #calories {
+                position: absolute;
+                top: 8%;
+                right: 8%;
+            }
+            table, th, td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+                padding: 20px;
+            }
+            tr:hover {
+                background-color:lavender;
+            }
+            #tablecalorie {
+                position: absolute;
+                top: 20%;
+                right: 10%;
+                max-width: 500px;
+                background-color: rgba(230, 230, 255, 0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <marquee width="100%" height="30px" direction="right" style="background-color: thistle;padding: 5px;">Check how many calories your favorite food contains!!</marquee>
+        <div>
+            <form id="calorie">
+                <label for="foodname">Food Name</label>
+                <br>
+                <input type="text" id="foodname" name="foodname" placeholder="Food name">
+                <br>
+                <br>
+                <label for="foodtype">Food Type</label>
+                <br>
+                <input type="text" id="foodtype" name="foodtype" placeholder="Food type">
+                <br>
+                <br>
+                <label for="foodweight">Food Weight (in gms)</label>
+                <br>
+                <input type="number" id="foodweight" name="foodweight" placeholder="Food weight in grams">
+                <br>
+                <br>
+                <input type="button" name="calculate" id="btn" value="Count Calories" onclick="caloriecount()">
+            </form>
+        </div>
+
+        <table id="tablecalorie">
+            <caption style="background-color: aquamarine;height: 25px;padding: 5px;">Calories of frequently tracked foods</caption>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Calories (in 100gm)</th>
+            </tr>
+            <tr>
+                <td>Rice</td>
+                <td>Carbohydrate</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Oats</td>
+                <td>Fibre</td>
+                <td>389</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>Wheat based</td>
+                <td>266</td>
+            </tr>
+            <tr>
+                <td>Milk</td>
+                <td>Protein</td>
+                <td>42</td>
+            </tr>
+        </table>
+        <p id="calories"></p>
+        <script>
+            function caloriecount()
+            {
+                var name = document.getElementById("foodname").value
+                var type = document.getElementById("foodtype").value
+                var weight = document.getElementById("foodweight").value
+                var cal = 7.7161791764707 * weight;
+                document.getElementById("calories").style.backgroundColor = "lightgreen";
+                document.getElementById("calories").style.height = "50px";
+                document.getElementById("calories").style.padding = "20px";
+                document.getElementById("calories").innerHTML = "Your "+name+" belonging to "+type+" category"+ " weighing, "+weight+" grams"+" contains "+Math.floor(cal)+" calories";
+            }
+        </script>
+        <a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 100%;text-decoration: none;">Back to top</a>
+        <footer style="background-color: rgba(243, 230, 255, 0.8);height: 170px;padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;">
+            <div style="float: right;position: absolute;right: 10%;">Quick link access: 
+            <nav>
+                <a href="http://localhost/html%20project/cookingportalhome.php" style="text-decoration: none;color: darkgreen;">Home</a>|
+                <a href="http://localhost/html%20project/login.php" style="text-decoration: none;color: darkgreen;">Log in</a>|
+                <a href="http://localhost/html%20project/ingofblackcurrent.php" style="text-decoration: none;color: darkgreen;">Black Currant</a>|
+                <a href="http://localhost/html%20project/Htips.php" style="text-decoration: none;color: darkgreen;">Health Tips</a>|
+                <a href="http://localhost/html%20project/regional%20home.php" style="text-decoration: none;color: darkgreen;">Regional food</a>|
+                <a href="http://localhost/html%20project/IndianVar.php" style="text-decoration: none;color: darkgreen;">Shop</a>
+            </nav></div>
+            <address>
+                Topic: Calorie counter page for cooking portal<br>
+                Author: Anjana<br>
+                Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+            </address>
+            <br>
+            <p>Provide Feedback: <a href="http://localhost/html%20project/feedback.php">Feedback</a></p>
+            <p style="position: absolute;right: 10%;top: 89%">Upload Your Recipes: <a href="http://localhost/html%20project/upload.php">Upload</a></p>
+        </footer>
+    </body>

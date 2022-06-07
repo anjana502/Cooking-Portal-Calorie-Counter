@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Cooking Portal and Calorie Counter Account Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Cooking portl and calorie counter login">
+
+        <style>
+            body {
+                background-image: url("feedback.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            #feedback {
+                max-width: 500px;
+                position: absolute;
+                top: 10%;
+                right: 10%;
+                border: 1px solid grey;
+                padding: 10px;
+                background-color:beige;
+            }
+            #submittingform {
+                position: relative;
+                left: 2%;
+                background-color:forestgreen;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 94%;
+                opacity: 0.9;
+                font-size: 15px;
+            }
+            #submittingform:hover {
+                opacity: 1;
+            }
+            #suggestions:hover {
+                background:lemonchiffon;
+            }
+            #review {
+                background-color: rgba(255, 255, 204, 0.8);
+                list-style-type:none;
+                max-width: 400px;
+                padding: 20px;
+            }
+            .chef {
+                background-color: rgba(255, 255, 153, 0.5);
+                padding: 10px;
+                text-align: center;
+            }
+            #img1:hover {
+                content:url("ratings\ 1.jpg");
+            }
+            #img2:hover {
+                content:url("ratings\ 2.jpg");
+            }
+            #img3:hover {
+                content:url("ratings\ 3.jpg");
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: bisque;opacity: 0.8;display: inline;margin-left: 100px;padding: 10px;">Our best reviews </h1>
+        <ul id="review">
+            <div class="chef">
+                <li>
+                <img src="chef 1.png" style="width: 250px;height: 250px;" id="img1">
+                <br>
+                <q>I have been recieving a lot of appraisals after sharing my dishes through this portal</q>
+                </li><hr>
+            </div>
+            <div class="chef">
+                <li>
+                    <img src="chef 2.jpg" style="width: 325px;height: 250px;" id="img2">
+                    <br>
+                    <q>I tried all the recipes from the portal, the regional foods part is great</q>
+                </li><hr>
+            </div>
+            <div class="chef">
+                <li>
+                    <img src="chef 3.jpg" style="width: 300px;height: 250px;" id="img3">
+                    <br>
+                    <q>I travel alot, knowing about the exotic foods all the over the world through this portal is good</q>
+                </li>
+            </div>
+        </ul>
+        <div id="feedback">
+            <h1 style="text-align: center;">Feedback</h1>
+            <form name="feedback" action="feedbackstore.php" method="POST">
+                <div style="margin: 10px;">
+                    <fieldset>
+                        <legend>Performance Rating</legend>
+                        <input type="radio" id="r1" name="rating" value="Poor">
+                        <label for="r1">Poor</label>
+                        <input type="radio" id="r2" name="rating" value="Average">
+                        <label for="r2">Average</label>
+                        <input type="radio" id="r3" name="rating" value="Good">
+                        <label for="r3">Good</label>
+                        <input type="radio" id="r4" name="rating" value="Excellent">
+                        <label for="r1">Excellent</label>
+                    </fieldset>
+                    <hr>
+                </div>
+                <div style="margin: 10px;">
+                    <label for="fav">Choose your favorite part of the website:</label><br>
+                <select id="fav" name="fav">
+                    <option value="Desserts">Desserts</option>
+                    <option value="Regional food">Regional food</option>
+                    <option value="Calorie counter">Calorie counter</option>
+                    <option value="Upload">Uploading dishes</option>
+                </select><br>
+                <hr>
+                </div>
+                <div style="margin: 10px;">
+                    <label for="suggestions">How can we improve?</label><br>
+                    <textarea id="suggestions" name="suggestions" rows="10" cols="42" placeholder="Enter your suggestions here...."></textarea>
+                <br>
+                </div>
+                 <input type="submit" id="submittingform" value="Submit">
+            </form>
+        </div>
+        <a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 80%;text-decoration: none;">Back to top</a>
+        <footer style="background-color: rgba(243, 230, 255, 0.8);height: 170px;padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;">
+            <div style="float: right;position: absolute;right: 4%;">Quick link access: 
+            <nav>
+            <a href="http://localhost/html%20project/cookingportalhome.php" style="text-decoration: none;color: darkgreen;">Home</a>|
+                <a href="http://localhost/html%20project/login.php" style="text-decoration: none;color: darkgreen;">Log in</a>|
+                <a href="http://localhost/html%20project/ingofblackcurrent.php" style="text-decoration: none;color: darkgreen;">Black Currant</a>|
+                <a href="http://localhost/html%20project/Htips.php" style="text-decoration: none;color: darkgreen;">Health Tips</a>|
+            </nav></div>
+            <address>
+                Topic: Calorie counter page for cooking portal<br>
+                Author: Anjana<br>
+                Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+            </address>
+            <br>
+            <p>Provide Feedback: <a href="">Feedback</a></p>
+            <p style="position: absolute;right: 4%;top: 89%">Upload Your Recipes: <a href="http://localhost/html%20project/upload.php">Upload</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Cooking Portal and Calorie Counter Account Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Cooking portl and calorie counter login">
+
+        <style>
+            body {
+                background-image: url("upload.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            #background1 {
+                background-color: rgba(230, 255, 204, 0.8);
+                max-width: 500px;
+                position: absolute;
+                top: 400%;
+                left: 30%;
+            }
+            #background2 {
+                background-color: white;
+                margin: 20px;
+                border: 1px solid grey;
+                padding: 10px;
+            }
+            #name1 {
+                width: 92%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background-color:rgba(245, 245, 239, 0.8);
+            }
+            #uploadfile {
+                background-color:forestgreen;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                cursor: pointer;
+                width: 90.5%;
+                opacity: 0.9;
+
+            }
+            #name1:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+            #uploadab {
+                background-color:forestgreen;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+            #uploadfile:hover {
+                opacity: 1;
+            }
+            #uploadab:hover {
+                opacity: 1;
+            }
+            #upload1 {
+                position:absolute;
+                top: 390%;
+                left: 2%;
+                background-color: rgba(255, 255, 204, 0.8);
+                padding: 20px;
+                margin-right: 20px;
+            }
+            #upload2 {
+                position:absolute;
+                top: 390%;
+                right: 2%;
+                background-color: rgba(255, 255, 204, 0.8);
+                padding: 20px;
+                margin-left: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p style="background-color:thistle;opacity: 0.9;padding: 10px;margin: 10px;font-size: 20px;color:crimson;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">A recipe has no soul, You as the chef should bring soul to the recipe!</p>
+        <div id="background1">
+            <div id="background2">
+                <form name="upload" action="uploadfile.php" method="POST" enctype="multipart/form-data">
+                    <label for="name1" style="font-size: 20px;">Username</label>
+                    <input type="text" id="name1" name="name1" placeholder="Username">
+                    <label for="uploadfile" style="font-size: 20px;">Upload your file</label>
+                    <input type="file" id="uploadfile" name="file"><hr>
+                    <input type="submit" id="uploadab" name="upload" value="Upload"> 
+                </form>
+            </div>
+        </div>
+        <div id="upload1">
+            <a href="https://tasty.co/recipe/apple-cinnamon-french-toast-bake"><img src="upload 1.jpg" style="width: 300px;height: 250px;"></a>
+            <p style="text-align: center;color:firebrick;font-size: 20px;">Apple Cinnamon Pie</p>
+        </div>
+        <div id="upload2">
+            <a href="https://tasty.co/recipe/cilantro-lime-chicken-veggie-rice-meal-prep"><img src="upload 2.jpg" style="width: 300px;height: 250px;"></a>
+            <p style="text-align: center;color:firebrick;font-size: 20px;">Lime Chicken Veggie Rice</p>
+        </div>
+        <a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 1300%;text-decoration: none;">Back to top</a>
+        <footer style="background-color: rgba(243, 230, 255, 0.8);padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;position: absolute;top: 1400%;">
+            <div style="float: right;margin-left: 500px;">Quick link access: 
+            <nav>
+                <a href="http://localhost/html%20project/cookingportalhome.php" style="text-decoration: none;color: darkgreen;">Home</a>|
+                <a href="http://localhost/html%20project/login.php" style="text-decoration: none;color: darkgreen;">Log in</a>|
+                <a href="http://localhost/html%20project/ingofblackcurrent.php" style="text-decoration: none;color: darkgreen;">Black Currant</a>|
+                <a href="http://localhost/html%20project/Htips.php" style="text-decoration: none;color: darkgreen;">Health Tips</a>|
+            </nav></div>
+            <address style="float: left;margin-right: 500px;">
+                Topic: Login page for cooking portal<br>
+                Author: Anjana<br>
+                Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+            </address>
+        </footer>
+    </body>
+</html>

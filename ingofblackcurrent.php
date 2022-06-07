@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ingredients of Black Currant
+        </title>
+    </head>
+    <body>
+        <style>
+            h1{
+                background-color: lightpink;
+                text-align: center;
+                color: purple;
+            }
+            body{
+                background-image:url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            li{
+                color:wheat;
+                font-size:20px;
+            }
+            h2{
+                color:whitesmoke;
+            }
+        </style>
+        <h1>Ingredients of Black Currant</h1>
+        <img src="https://vaya.in/recipes/wp-content/uploads/2018/12/Blackcurrant-Ice-Cream.jpg" alt="black currant" width="300" height="300">
+        <h2>Ingredients list</h2> 
+        <ul>
+            <li>Black currant berries</li>
+            <li>Agave nectar (or maple syrup)</li>
+            <li>Heavy whipping cream</li>
+            <li>Milk</li>
+            <li>Salt</li>
+            <li>Vanilla extract</li>
+        </ul>
+        <a href="#top" id="link" style="text-align: center;display: inline;background-color: blanchedalmond;border: 1px solid grey;border-radius: 10px;padding: 10px;position: absolute;left:46%;top: 100%;text-decoration: none;">Back to top</a>
+        <footer style="background-color: rgba(243, 230, 255, 0.8);padding-left: 20px; padding-bottom: 0px;padding-right: 20px;padding-top: 20px;position: absolute;top: 110%;">
+            <div style="float: right;margin-left: 500px;">Quick link access: 
+            <nav>
+                <a href="http://localhost/html%20project/cookingportalhome.php" style="text-decoration: none;color: darkgreen;">Home</a>|
+                <a href="http://localhost/html%20project/login.php" style="text-decoration: none;color: darkgreen;">Log in</a>|
+                <a href="http://localhost/html%20project/ingofblackcurrent.php" style="text-decoration: none;color: darkgreen;">Black Currant</a>|
+                <a href="http://localhost/html%20project/Htips.php" style="text-decoration: none;color: darkgreen;">Health Tips</a>|
+            </nav></div>
+            <address style="float: left;margin-right: 500px;">
+                Topic: Login page for cooking portal<br>
+                Author: Anjana<br>
+                Contact details: <a href="mailto:abc@gmail.com" style="text-decoration: none;color: darkgreen;">Through mail</a>
+            </address>
+        </footer>
+    </body>
+</html>
